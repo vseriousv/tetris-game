@@ -1,0 +1,66 @@
+body {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #222;
+}
+
+#tetris-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#game-board {
+    background-color: #333;
+    border: 1px solid #fff;
+    display: block;
+}
+
+#info {
+    color: #fff;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#info p {
+    margin: 0;
+}
+
+#info span {
+    font-weight: bold;
+}
+
+#game-controls,
+#direction-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+#game-controls button,
+#direction-controls button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 4px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#game-controls button:hover,
+#direction-controls button:hover {
+    background-color: #555;
+}
