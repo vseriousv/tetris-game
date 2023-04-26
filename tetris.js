@@ -15,6 +15,16 @@ function drawMatrix(matrix, offset) {
           scale,
           scale
         );
+
+        // Draw a border around the square
+        ctx.strokeStyle = "#111";
+        ctx.lineWidth = 2;
+        ctx.strokeRect(
+          (x + offset.x) * scale,
+          (y + offset.y) * scale,
+          scale,
+          scale
+        );
       }
     });
   });
@@ -23,8 +33,13 @@ function drawMatrix(matrix, offset) {
   playingField.forEach((row, y) => {
     row.forEach((value, x) => {
       if (value !== 0) {
-        ctx.fillStyle = value;
+        ctx.fillStyle = "white";
         ctx.fillRect(x * scale, y * scale, scale, scale);
+
+        // Draw a border around the square
+        ctx.strokeStyle = "#111";
+        ctx.lineWidth = 2;
+        ctx.strokeRect(x * scale, y * scale, scale, scale);
       }
     });
   });
