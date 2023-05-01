@@ -1,6 +1,6 @@
 const canvas = document.getElementById('game-board');
 const ctx = canvas.getContext('2d');
-const scale = 20;
+const scale = 30;
 let score = 0;
 let gamePaused = false;
 
