@@ -14,17 +14,24 @@
     </div>
 </div>
 <div id="game-controls">
-    <button id="start-game">Start Game</button>
-    <button id="pause-game">Pause/Resume Game</button>
-    <button id="show-rules">Show Rules</button>
+    <button class="control-btn" id="start-game">Start Game</button>
+    <button class="control-btn" id="pause-game">Pause/Resume Game</button>
+    <button class="control-btn" id="show-rules">Show Rules</button>
 </div>
 <div id="direction-controls">
-    <button id="move-left">&larr; Left</button>
-    <button id="move-right">&rarr; Right</button>
-    <button id="rotate-up">Rotate &uarr;</button>
-    <button id="move-down">&darr; Down</button>
+    <div id="movement-controls">
+        <div id="horizontal-controls">
+            <button class="arrow-btn" id="move-left">&larr;</button>
+            <button class="arrow-btn" id="move-right">&rarr;</button>
+        </div>
+        <div id="vertical-controls">
+            <button class="arrow-btn" id="move-down">&darr;</button>
+        </div>
+    </div>
+    <div id="rotate-controls">
+        <button class="arrow-btn" id="rotate-up">&uarr;</button>
+    </div>
 </div>
-
 <script src="tetris.js"></script>
 </body>
 </html>
